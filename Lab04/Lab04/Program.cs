@@ -1,37 +1,19 @@
 ﻿
 using System;
 using System.IO;
-public class ExceptionLearning
+public class IfLearning
 {
     public static void Main()
     {
-        int a = 10;
-        int b = 20;
-        int c;
-        try
+        int a = 2;
+        if (a == 2)
         {
-            c = div(a, b);
+            Console.WriteLine("execute this line");
         }
-        catch (DivideByZeroException e)
+        if (a < 2)
         {
-
-            Console.WriteLine("DivideByZeroException");
-            Console.WriteLine(e.Message);
+            Console.WriteLine("execute this line too");
         }
-        catch (NullReferenceException e)
-        {
-            Console.WriteLine("NullReferenceException");
-            Console.WriteLine(e.Message);
-
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine("Exception");
-            Console.WriteLine(e.Message);
-        }
-    }
-    private static int div(int a, int b)
-    {
-        throw new _____________________();
+        Console.WriteLine("execute next line");
     }
 }
